@@ -9,7 +9,7 @@
 
 		this.login = function(){
 			// send ajax call
-			$http.post('/login', {
+			$http.post('/accounts/login', {
 				username : this.username,
 				password : this.password
 			})

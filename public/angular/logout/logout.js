@@ -9,7 +9,7 @@
 		this.logout = function(){
 
 			//send ajax call
-			$http.get('/logout')
+			$http.get('/accounts/logout')
 			.success(function(data,status, headers, config){
 				window.location='/';
 			})

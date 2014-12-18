@@ -10,7 +10,7 @@
 		this.signup = function(){
 
 			// send ajax call
-			$http.post('/signup', {
+			$http.post('/accounts/signup', {
 				username : this.username,
 				password : this.password
 			})

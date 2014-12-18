@@ -71,6 +71,7 @@ app.set('view engine', 'ejs');
 //////////////////////////////////
 
 var pageNavigation = require('./routes/pageNavigation');
+var accounts = require('./routes/accounts');
 
 
 
@@ -92,6 +93,7 @@ app.use(passport.session());
 
 // routes
 app.use('/', pageNavigation);
+app.use('/accounts/', accounts);
 
 
 
