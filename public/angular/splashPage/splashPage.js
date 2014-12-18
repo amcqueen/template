@@ -8,7 +8,9 @@
 			window.location='/login';
 		}
 
-
+		this.begin_signup = function(){
+			window.location='/signup';
+		}
 
 	}]);
 })();
