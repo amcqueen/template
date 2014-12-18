@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="template">
+	<head>
+		<title>Splash Page</title>
+		<script src="/javascripts/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-resource.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-route.js"></script>
+		
+		<script src="/angular/splashPage/splashPage.js"></script>		
+	</head>
+
+
+	<body ng-controller="splashPageController as page">
+		<h1>Splash Page Title</h1>
+		<button value="Log In" ng-click="page.begin_login()">Log In</button>
+	</body>
+	
+</html>

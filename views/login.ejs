@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="template">
+	<head>
+		<title>Login Page</title>
+		<script src="/javascripts/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-resource.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-route.js"></script>	
+		
+		<script src="/angular/loginPage/loginPage.js"></script>	
+	</head>
+
+
+	<body ng-controller="loginPageController as login">
+		<h1>Login Page Title</h1>
+		<input ng-model="login.username" placeholder="Username"></input>
+		<input ng-model="login.password" placeholder="Password"></input>
+		<button ng-click="login.login()">Log In</button>
+	</body>
+	
+</html>
