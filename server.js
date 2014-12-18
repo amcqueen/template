@@ -11,7 +11,6 @@ FILE CONTENTS
   - Connect to mongoDB
   - Set up passport
   - Export app
-  - Create a test user
   - Start server
 
 */
@@ -161,24 +160,6 @@ passport.deserializeUser(function(id, done) {
 //////////////////////////////////
 
 module.exports = app;
-
-
-
-//////////////////////////////////
-//////  CREATE A TEST USER  //////
-//////////////////////////////////
-
-var newUser = new User({username:'a', password:'a'});
-
-  newUser.save(function(err, result) {
-    if (err) {
-      console.error(err);
-    }
-    else {
-      console.log('Created user a');
-    }
-
-  });
 
 
 
